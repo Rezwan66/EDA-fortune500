@@ -11,6 +11,8 @@ It is mainly comprised of:
 ### Course Link and Data Source: https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql
 **All datasets and images are the subject to the course referred.
 
+The relation between the tables are shown with this ER Diagram:
+erdiagram.png
 
 ```sql
 /****** Summarize the distribution of numeric values
