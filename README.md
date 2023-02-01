@@ -12,7 +12,35 @@ It is mainly comprised of:
 **All datasets and images are the subject to the course referred.
 
 The relation between the tables are shown with this ER Diagram:
-https://github.com/Rezwan66/EDA_fortune500-companies/blob/b591a6b4d0b233036c2c91e108baf7a260f8f47d/erdiagram.png
+
+![image](https://github.com/Rezwan66/EDA_fortune500-companies/blob/b591a6b4d0b233036c2c91e108baf7a260f8f47d/erdiagram.png)
+
+
+At first, let us look at a few rows of each of the "evanston311", "fortune500", and the "stackexchange" tables:
+
+```sql
+SELECT TOP (5) *
+  FROM [datacamp_eda].[dbo].[ev311$]; /* evanston311 table */
+```
+
+![image](https://user-images.githubusercontent.com/63563859/216164510-d16ddad8-a184-42d7-972a-524cac7ce905.png)
+*Fig: Screenshot of the evanston311 table queried for the first 5 rows in Microsoft SQL Server Management Studio*
+
+```sql
+SELECT TOP (5) *
+  FROM [datacamp_eda].[dbo].[fortune$];
+```
+
+![image](https://user-images.githubusercontent.com/63563859/216167568-f7d574a6-fd42-4bd2-8abe-35a00554da0d.png)
+*Fig: Screenshot of the fortune500 table queried for the first 5 rows in Microsoft SQL Server Management Studio*
+
+```sql
+SELECT TOP (5) *
+  FROM [datacamp_eda].[dbo].[stackexchange$];
+```
+
+![image](https://user-images.githubusercontent.com/63563859/216168942-c891ab9d-3357-43cd-8b48-0aae273ead7d.png)
+*Fig: Screenshot of the stackexchange table queried for the first 5 rows in Microsoft SQL Server Management Studio*
 
 ```sql
 /****** Summarize the distribution of numeric values
