@@ -28,7 +28,7 @@ SELECT TOP (5) *
 
 ```sql
 SELECT TOP (5) *
-  FROM [datacamp_eda].[dbo].[fortune$];
+  FROM [datacamp_eda].[dbo].[fortune$]; /* fortune500 table */
 ```
 
 ![image](https://user-images.githubusercontent.com/63563859/216167568-f7d574a6-fd42-4bd2-8abe-35a00554da0d.png)
@@ -36,7 +36,7 @@ SELECT TOP (5) *
 
 ```sql
 SELECT TOP (5) *
-  FROM [datacamp_eda].[dbo].[stackexchange$];
+  FROM [datacamp_eda].[dbo].[stackexchange$]; /* stackexchange table */
 ```
 
 ![image](https://user-images.githubusercontent.com/63563859/216168942-c891ab9d-3357-43cd-8b48-0aae273ead7d.png)
