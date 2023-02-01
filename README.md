@@ -7,3 +7,6 @@ It is mainly comprised of:
 - Analysis of numeric, character, and date/time data types.
 - Using functions to aggregate, summarize, and analyze data without leaving the database.
 - We also fixed common problems faced with the dataset and cleaned up the messy data.
+
+### Course Link: https://app.datacamp.com/learn/courses/exploratory-data-analysis-in-sql
+**All datasets and images are the subject to the course referred.
