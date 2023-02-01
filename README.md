@@ -1,4 +1,4 @@
-# Exploratory Data Analysis of Large Companies using PostgreSQL
+# An investigation of change in revenue for Fortune500 companies using PostgreSQL
 An exploratory data analysis in SQL using data from Stack Overflow, Fortune 500 companies, and 311 help requests from Evanston, IL.
 
 This is a project work using SQL of a data analysis course that I have completed from DataCamp named 'Exploratory Data Analysis in SQL'.
