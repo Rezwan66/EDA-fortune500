@@ -12,7 +12,7 @@ It is mainly comprised of:
 **All datasets and images are the subject to the course referred.
 
 The relation between the tables are shown with this ER Diagram:
-erdiagram.png
+https://github.com/Rezwan66/EDA_fortune500-companies/blob/b591a6b4d0b233036c2c91e108baf7a260f8f47d/erdiagram.png
 
 ```sql
 /****** Summarize the distribution of numeric values
