@@ -42,37 +42,34 @@ SELECT TOP (5) *
 ![image](https://user-images.githubusercontent.com/63563859/216168942-c891ab9d-3357-43cd-8b48-0aae273ead7d.png)
 *Fig: Screenshot of the stackexchange table queried for the first 5 rows in Microsoft SQL Server Management Studio*
 
-```sql
-/****** Summarize the distribution of numeric values
-Was 2017 a good or bad year for revenue of Fortune 500 companies? 
-Examine how revenue changed from 2016 to 2017 by first looking at the distribution of revenues_change 
-and then counting companies whose revenue increased.  ******/
--- Select the count of each value of revenues_change
-SELECT revenues_change, COUNT(revenues_change) as revcount
-  FROM [datacamp_eda].[dbo].[fortune$]
-   GROUP BY revenues_change
- -- order by the values of revenues_change
- ORDER BY revcount;
-```
-NEXT
+
+Now, let us look at a business question: "Was 2017 a good or bad year for revenue of Fortune 500 companies?"
+
+We will examine how revenue changed from 2016 to 2017 by first looking at the distribution of revenues_change and then counting companies whose revenue increased.
+
+
 
 ```sql
---Repeat step 1, but this time, cast revenues_change as an integer to reduce the number of different values.
--- Select the count of each revenues_change integer value
-SELECT cast(revenues_change as integer), count(revenues_change) as revcount
+SELECT 
+      cast(revenues_change as integer) AS revenues_change_int, -- Cast revenues_change as an integer to reduce the number of different values
+      count(revenues_change) AS revcount -- Select the count of each value of revenues_change
   FROM [datacamp_eda].[dbo].[fortune$]
- group by cast(revenues_change as integer)
- -- order by the values of revenues_change
- ORDER BY revcount;
+ GROUP BY cast(revenues_change as integer)
+ ORDER BY revcount; -- order by the values of revenues_change
  ```
- next
+ 
+
+![image](https://user-images.githubusercontent.com/63563859/216173417-5fc7f2e7-dec7-4103-b1ea-cb5ae5b805e6.png)
+
+
+ Another business question we tried to solve was: "How many of the Fortune 500 companies had revenues increase in 2017 compared to 2016?"
+ 
+ To find out, we counted the rows of fortune500 where revenues_change indicates an increase.
  
  ```sql
- --How many of the Fortune 500 companies had revenues increase in 2017 compared to 2016? 
---To find out, count the rows of fortune500 where revenues_change indicates an increase.
--- Count rows 
-SELECT count(*) as comp_pos_change
+SELECT count(*) as comp_pos_change -- Count rows 
   FROM [datacamp_eda].[dbo].[fortune$]
- -- Where...
  WHERE revenues_change>0;
  ```
+
+![image](https://user-images.githubusercontent.com/63563859/216174616-2e1e0e15-77a9-4317-92f7-3d02035a4723.png)
